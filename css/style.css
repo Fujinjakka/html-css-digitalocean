@@ -1,0 +1,40 @@
+/* debug */
+[class*="col-"] {
+  border: 1px solid black;
+  background-color: lightgrey;
+}
+.container-fluid {
+  background-color: lightblue;
+}
+
+/* utility */
+header {
+ font-family: 'Signika', sans-serif;
+}
+.clean_list {
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+/* header */
+/* nav */
+
+#nav_container {
+  height: 80px;
+  line-height: 80px;
+}
+#nav_container img {
+  width: 100%;
+}
+#nav_button {
+  color: blue;
+}
+#nav_list_left {
+  text-align: center;
+}
+#nav_list_right {
+  text-align: right;
+}
+nav li:hover {
+  color: #006aff;
+}

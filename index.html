@@ -7,49 +7,64 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Digital Ocean</title>
   </head>
   <body>
 
     <header>
-
       <nav>
-          <div id="nav_container" class="container">
+        <div id="nav_container" class="container-fluid">
+          <div class="container">
             <div class="row">
-
               <div class="col-xs-2 col-lg-2">
                 <img src="img/logo.png" alt="logo">
               </div>
-
               <div id="nav_list_left" class="col-xs-8 col-lg-5">
                 <ul class="list-inline clean_list visible-lg">
-                  <li>Product</li>
+                  <li>Product<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
                   <li>Customers</li>
-                  <li>Community</li>
+                  <li>Community<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
                   <li>Pricing</li>
                 </ul>
-
               </div>
               <div id="nav_list_right" class="col-xs-2 col-lg-5">
                 <div class="visible-lg">
                   <ul class="list-inline clean_list">
                     <li>Doc</li>
-                    <li>Support</li>
+                    <li>Support<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
                     <li>Log-in</li>
                   </ul>
-                  <a id="nav_button" href="#">bottone</a>
+                  <a id="nav_button" href="#">Sing Up</a>
                 </div>
-                <a class="hidden-lg" href="#">burger icon</a>
-
+                <a class="hidden-lg" href="#"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></a>
               </div>
             </div>
           </div>
-
+        </div>
       </nav>
 
-      <div class="header_main">
+      <div id="header_background" class=" container-fluid">
+        <div class="container">
+          <div class="row">
 
+            <div id="header_container_left" class="col-md-7 col-lg-7">
+              <h1 id="header_title">The simplest cloud platform for developers &amp; teams</h1>
+              <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or then thousand.</p>
+            </div>
+
+            <div id="header_container_right" class="col-md-5 col-lg-5">
+                <h2>Deploy your app in seconds.</h2>
+                <h2 id="p_blue">Get started now.</h2>
+                <input class="header_input" type="text" name="email" value="" placeholder="Email">
+                <input class="header_input" type="password" name="password" value="" placeholder="Password">
+                <button id="header_button_blue" type="button" name="button">Create your account</button>
+                <button id="header_button_google" type="button" name="button"><img id="img_google" src="img/google-logo2.webp" alt="googlelogo">Sign up with google</button>
+                <p>By signing up you agree to the<a href="#">Terms of Service</a>.</p>
+            </div>
+
+          </div>
+        </div>
       </div>
 
     </header>

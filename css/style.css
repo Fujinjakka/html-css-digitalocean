@@ -23,8 +23,14 @@
 
 #nav_container {
   height: 80px;
+  width: 100%;
+  background-color: white;
   line-height: 80px;
   font-weight: 600;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 #nav_container img {
   width: 100%;
@@ -50,6 +56,7 @@ nav li:hover {
 /* header_background */
 
 #header_background {
+  margin-top: 80px;
   background-image: url("../img/active-background.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,9 +80,10 @@ nav li:hover {
   border-radius: 5px;
   margin: 60px 0;
   text-align: center;
+  font-weight: 600;
 }
 #header_h2 {
-  margin-top: 60px;
+  padding-top: 60px;
   font-weight: 700;
 }
 #text_blue {
@@ -83,39 +91,25 @@ nav li:hover {
   color: #006aff;
   margin-top: 0;
 }
-.header_input {
-  width: 100%;
-  font-size: 24px;
-  border-color: lightgrey;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
 #header_button_blue {
-  width: 100%;
-  font-size: 24px;
-  font-weight: 600;
-  border-radius: 5px;
-  margin-bottom: 10px;
   background-color: #579AFF;
   color: white;
-  border: none;
+  font-weight: 700;
 }
-#header_button_google {
-  width: 100%;
-  font-size: 24px;
-  font-weight: 600;
-  color: grey;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  line-height: 20px;
-  padding: 10px;
-  border: none;
-  background: none;
-  border-style: outset;
+#header_button_white {
+  color: #9FA1A3;
+  background-color: white;
+  border-bottom: 1px solid #D3D5D8;
+  border-right: 1px solid #D3D5D8;
+  font-weight: 700;
 }
 #img_google {
 height: 20px;
 float: left;
+}
+#header_container_right p {
+  padding: 10px 0;
+  font-size: 12px;
 }
 
 /* main */
@@ -131,24 +125,13 @@ float: left;
   font-size: 18px;
   font-weight: 600;
 }
-/* .main_1_img {
-  width: 150px;
-  height: 100px;
+.main_1_img_container {
+  width: 100%;
 }
-.img_left {
-  margin-right: 30px;
-} */
 #main_1 a {
   color: #006aff;
   display: block;
   margin: 30px 0;
-}
-#main_1 [class*="col-"]{
-  height: 100px;
-}
-#main_1 img {
-  width: 100%;
-  /* height: 100%; */
 }
 
 /* main2 */
@@ -246,7 +229,7 @@ float: left;
   margin-top: 80px;
   text-align: center;
 }
-#main_5 li {
+#main_5 li:not(:last-child) {
   border-bottom: 1px solid white;
 }
 .main_5_code {
@@ -342,6 +325,9 @@ float: left;
 
   #main_1 [class*="col-"]{
     height: 200px;
+  }
+  #main_1 img {
+    height: 150px;
   }
 
 }
